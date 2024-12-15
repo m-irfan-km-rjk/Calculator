@@ -3,6 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding: 5px;
 }
 
 .calculator {
@@ -17,6 +18,13 @@ body {
     padding: 20px;
     flex-direction: column;
     gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .calculator {
+      width: 100%;
+      grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .input {
